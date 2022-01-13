@@ -15,7 +15,29 @@
             <input id="email" type="email" placeholder="johndoe@email.com" required /><br />
 
             <label id="number-label" for="number">Age</label>
-            <input id="number" type="number" placeholder="45"/><br />
+            <input id="number" type="number" placeholder="45" min="0" max="100"/><br />
+
+            <select name="sample_dropdown" id="dropdown">
+                <option value="option1">option 1</option>
+                <option value="option2">option 2</option>
+                <option value="option3">option 3</option>
+                <option value="option4">option 4</option>
+            </select>
+
+            <input type="radio" name="sample_radio" id="option1" value="option1" />
+            <label for="option1">option1</label>
+            <input type="radio" name="sample_radio" id="option2" value="option2" />
+            <label for="option2">option2</label>
+
+            <input type="checkbox" name="sample_checkbox" id="option1" value="option 1"/>
+            <label for="option1">option 1</label>
+            <input type="checkbox" name="sample_checkbox" id="option2" value="option 2"/>
+            <label for="option2">option 2</label>
+            
+
+            <!-- additional comments :) -->
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
             <button id="submit">Submit</button>
         </form>
 
