@@ -1,15 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+body {
+    display: block;
+    color: white;
+    font-family: Outfit, sans-serif;
+}
+
 header {
+    background-color: hsla(0, 0%, 0%, 0.9);
+    z-index: 2;
     text-align: center;
     padding: 40px;
 }
 
+#title {
+    margin-bottom: 8px;
+}
+
+#description {
+    margin: auto;
+    max-width: 720px;
+}
+
+#bg-img {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url("./assets/background.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:
+        brightness(50%)
+        contrast(90%);
+}
+
 #form-container {
-    background-color: lightgray;
     padding: 20px 0px;
 }
 
@@ -18,5 +51,78 @@ header {
     border-radius: 8px;
     max-width: 640px;
     padding: 20px 50px;
-    background-color: white;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+label {
+    display: block;
+}
+
+.required-label {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.input-group {
+    margin: 20px 0px;
+}
+
+input, #dropdown {
+    padding: 4px 8px;
+    margin-top: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 8px 4px 8px 16px;
+}
+
+fieldset {
+    padding: 0px;
+    border: none;
+}
+
+legend {
+    margin-bottom: 8px;
+}
+
+#comment {
+    display: block;
+    width: 90%;
+    height: 120px;
+    margin: auto;
+    margin-top: 8px;
+    padding: 8px;
+    font-family: Outfit, sans-serif;
+    resize: vertical;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+    width: 120px;
+    padding: 12px 8px;
+    border-color: white;
+    border-radius: 4px;
+    font-family: Outfit, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        padding: 40px 10px;
+    }
+
+    #form-container {
+        padding: 0px;
+    }
+
+    #survey-form {
+        border-radius: 0px;
+        padding: 20px;
+    }
 }
