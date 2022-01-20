@@ -10,11 +10,13 @@ header {
 
 #form-container {
     background-color: lightgray;
-    padding: 20px 50px;
+    padding: 20px 0px;
 }
 
 #survey-form {
-    background-color: white;
-    border-radius: 20px;
+    margin: auto;
+    border-radius: 8px;
+    max-width: 640px;
     padding: 20px 50px;
+    background-color: white;
 }
