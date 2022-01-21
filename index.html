@@ -1,119 +1,121 @@
 <!DOCTYPE HTML>
 
-<html>
-  <head>
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1 id="title">Isekai Labs - Beta Testing</h1>
-      <p id="description">Thank you for taking time to participate in the beta tests for our new VR game. As part of our beta test, please accomplish the survey form below.</p>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isekai Labs - Beta Testing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Isekai Labs - Beta Testing</h1>
+    <p id="description">Thank you for taking time to participate in the beta tests for our new VR game. As part of our beta test, please accomplish the survey form below.</p>
+  </header>
 
-    <div id="form-container">
-      <form id="survey-form">
-        <!-- USERNAME -->
-        <div class="input-group">
-          <label id="name-label" for="name">
-            What is your username? <span class="required-label">required</span>
-            <br />
-            <input id="name" type="text" placeholder="e.g. firefox_ning" required />
-          </label>
-        </div>
-        
-        <!-- EMAIL -->
-        <div class="input-group">
-          <label id="email-label" for="email">
-            What is your e-mail? <span class="required-label">required</span>
-            <br />
-            <input id="email" type="email" placeholder="e.g. firefox_ning@email.com" required />
-          </label>
-        </div>
-        
-        <!-- OVERALL SATISFACTION -->
-        <div class="input-group">
-          <label id="number-label" for="number">
-            On a scale of 1-10, how would you rate your overall experience with the game?
-            <br />
-            <input id="number" type="number" placeholder="e.g. 10" min="0" max="10"/>
-          </label>
-        </div>
-
-        <!-- FAVE MECH CLASS -->
-        <div class="input-group">
-          <label for="dropdown">What was your favorite mecha class?
-            <br />
-            <select name="fav-mech-class" id="dropdown">
-              <option value="" disabled="true" selected>Please select a class</option>
-              <option value="burst">Burst</option>
-              <option value="continuous">Continuous</option>
-              <option value="snipe">Snipe</option>
-              <option value="assault">Assault</option>
-              <option value="hit-and-run">Hit-and-run</option>
-              <option value="heavy-armed">Heavy Armed</option>
-            </select>
-          </label>
-        </div>
-
-        <!-- FAVE GAME ASPECT -->
-        <fieldset class="input-group">
-          <legend>Which aspect of the game did you like the most?</legend>
-
-          <label for="battle-royale">
-            <input type="radio" name="fav-game-aspect" id="battle-royale" value="battle-royale" /> Battle Royale mechanics
-          </label>
-          <label for="unique-abilities">
-            <input type="radio" name="fav-game-aspect" id="unique-abilities" value="unique-abilities" /> Unique abilities
-          </label>
-          <label for="mech-pilot">
-            <input type="radio" name="fav-game-aspect" id="mech-pilot" value="mech-pilot" /> Mecha & pilot mechanics
-          <label for="anime-graphics">
-              <input type="radio" name="fav-game-aspect" id="anime-graphics" value="anime-graphics" /> Anime-like Graphics
-          </label>
-          <label for="scifi-setting">
-            <input type="radio" name="fav-game-aspect" id="scifi-setting" value="scifi-setting" /> Sci-Fi setting
+  <div id="form-container">
+    <form id="survey-form">
+      <!-- USERNAME -->
+      <div class="input-group">
+        <label id="name-label" for="name">
+          What is your username? <span class="required-label">required</span>
+          <br />
+          <input id="name" type="text" placeholder="e.g. firefox_ning" required />
         </label>
-        </fieldset>
+      </div>
+      
+      <!-- EMAIL -->
+      <div class="input-group">
+        <label id="email-label" for="email">
+          What is your e-mail? <span class="required-label">required</span>
+          <br />
+          <input id="email" type="email" placeholder="e.g. firefox_ning@email.com" required />
+        </label>
+      </div>
+      
+      <!-- OVERALL SATISFACTION -->
+      <div class="input-group">
+        <label id="number-label" for="number">
+          On a scale of 1-10, how would you rate your overall experience with the game?
+          <br />
+          <input id="number" type="number" placeholder="e.g. 10" min="0" max="10"/>
+        </label>
+      </div>
 
-        <!-- WANT IMPROVED -->
-        <fieldset class="input-group">
-          <legend>Which of the following do you want improved?</legend>
-          
-          <label for="balanced-gameplay">
-            <input type="checkbox" name="need-improvement" id="balanced-gameplay" value="balanced-gameplay"/> More balanced gameplay
-          </label>
-          <label for="more-items">
-            <input type="checkbox" name="need-improvement" id="more-items" value="more-items"/> More items
-          </label>
-          <label for="more-skins">
-            <input type="checkbox" name="need-improvement" id="more-skins" value="more-skins"/> More skins
-          </label>
-          <label for="larger-map">
-            <input type="checkbox" name="need-improvement" id="larger-map" value="larger-map"/> Larger map
-          </label>
-          <label for="more-characters">
-            <input type="checkbox" name="need-improvement" id="more-characters" value="more-characters"/> More characters
-          </label>
-          <label for="better-pacing">
-            <input type="checkbox" name="need-improvement" id="better-pacing" value="better-pacing"/> Better pacing
-          </label>
-        </fieldset>
+      <!-- FAVE MECH CLASS -->
+      <div class="input-group">
+        <label for="dropdown">What was your favorite mecha class?
+          <br />
+          <select name="fav-mech-class" id="dropdown">
+            <option value="" disabled="true" selected>Please select a class</option>
+            <option value="burst">Burst</option>
+            <option value="continuous">Continuous</option>
+            <option value="snipe">Snipe</option>
+            <option value="assault">Assault</option>
+            <option value="hit-and-run">Hit-and-run</option>
+            <option value="heavy-armed">Heavy Armed</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- FAVE GAME ASPECT -->
+      <fieldset class="input-group">
+        <legend>Which aspect of the game did you like the most?</legend>
+
+        <label for="battle-royale">
+          <input type="radio" name="fav-game-aspect" id="battle-royale" value="battle-royale" /> Battle Royale mechanics
+        </label>
+        <label for="unique-abilities">
+          <input type="radio" name="fav-game-aspect" id="unique-abilities" value="unique-abilities" /> Unique abilities
+        </label>
+        <label for="mech-pilot">
+          <input type="radio" name="fav-game-aspect" id="mech-pilot" value="mech-pilot" /> Mecha & pilot mechanics
+        <label for="anime-graphics">
+            <input type="radio" name="fav-game-aspect" id="anime-graphics" value="anime-graphics" /> Anime-like Graphics
+        </label>
+        <label for="scifi-setting">
+          <input type="radio" name="fav-game-aspect" id="scifi-setting" value="scifi-setting" /> Sci-Fi setting
+      </label>
+      </fieldset>
+
+      <!-- WANT IMPROVED -->
+      <fieldset class="input-group">
+        <legend>Which of the following do you want improved?</legend>
         
-        <!-- ADDITIONAL COMMENTS :) -->
-        <div class="input-group">
-          <label for="comment">Do you have any additional comments about the game?</label>
-          <textarea name="comment" id="comment" placeholder="Enter your comment here."></textarea>
-        </div>
+        <label for="balanced-gameplay">
+          <input type="checkbox" name="need-improvement" id="balanced-gameplay" value="balanced-gameplay"/> More balanced gameplay
+        </label>
+        <label for="more-items">
+          <input type="checkbox" name="need-improvement" id="more-items" value="more-items"/> More items
+        </label>
+        <label for="more-skins">
+          <input type="checkbox" name="need-improvement" id="more-skins" value="more-skins"/> More skins
+        </label>
+        <label for="larger-map">
+          <input type="checkbox" name="need-improvement" id="larger-map" value="larger-map"/> Larger map
+        </label>
+        <label for="more-characters">
+          <input type="checkbox" name="need-improvement" id="more-characters" value="more-characters"/> More characters
+        </label>
+        <label for="better-pacing">
+          <input type="checkbox" name="need-improvement" id="better-pacing" value="better-pacing"/> Better pacing
+        </label>
+      </fieldset>
+      
+      <!-- ADDITIONAL COMMENTS :) -->
+      <div class="input-group">
+        <label for="comment">Do you have any additional comments about the game?</label>
+        <textarea name="comment" id="comment" placeholder="Enter your comment here."></textarea>
+      </div>
 
-        <!-- SUBMIT BUTTON -->
-        <div class="input-group">
-          <button id="submit">Submit</button>
-        </div>
-      </form>
-    </div>
+      <!-- SUBMIT BUTTON -->
+      <div class="input-group">
+        <button id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
 
-    <div id="bg-img"></div>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+  <div id="bg-img"></div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
 </html>
