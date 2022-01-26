@@ -123,6 +123,17 @@ legend {
     cursor: pointer;
 }
 
+#notice {
+    margin-top: 120px;
+    padding: 32px 16px;
+    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+#notice a {
+    color: rgb(236, 71, 107);
+}
+
 @media screen and (max-width: 720px) {
     header {
         padding: 40px 10px;
@@ -135,5 +146,10 @@ legend {
     #survey-form {
         border-radius: 0px;
         padding: 20px;
+    }
+
+    #notice {
+        margin: 0px;
+        background-color: black;
     }
 }
