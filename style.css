@@ -72,6 +72,15 @@ input, #dropdown {
     margin-top: 4px;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+#dropdown {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 12px;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
     margin: 8px 4px 8px 16px;
@@ -88,8 +97,9 @@ legend {
 
 #comment {
     display: block;
-    width: 90%;
-    height: 120px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 160px;
     margin: auto;
     margin-top: 8px;
     padding: 8px;
@@ -110,6 +120,7 @@ legend {
     text-transform: uppercase;
     color: white;
     background-color: hsl(0, 0%, 0%);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {
